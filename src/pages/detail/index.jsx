@@ -53,7 +53,7 @@ const DetailPage = () => {
             <div className='flex flex-col gap-6 basis-full lg:basis-1/2'>
               <div className='text-[#EBEEF5] text-2xl font-bold -tracking-[0.36px]'>{movie.original_title}</div>
               <div className=' text-[#8E95A9] text-xl'>{movie.overview}</div>
-              <div className='bg-black/65 rounded-lg px-2 py-1'>
+              <div className='bg-black/65 rounded-lg px-2 py-1 inline-flex w-[min-content]'>
                 <div className='inline-flex items-center justify-center gap-1'>
                   <CiStar color='#FFAD49' />
                   <div>{movie.vote_average}</div>

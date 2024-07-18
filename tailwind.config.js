@@ -17,6 +17,12 @@ module.exports = {
     },
     
     extend: {
+      colors: {
+        'bg-color': '#121829',
+        'grey-100': '#C3C8D4',
+        'grey-300': '#8E95A9',
+        'grey-400': '#767E94',
+      },
       
     },
   },
