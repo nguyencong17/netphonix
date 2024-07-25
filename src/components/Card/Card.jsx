@@ -11,7 +11,7 @@ export const Card = (props) => {
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
             alt={movie.title}
           />
-          <h1>{movie.title}</h1>
+          <h4>{movie.title}</h4>
         </div>
       </Link>
     </div>

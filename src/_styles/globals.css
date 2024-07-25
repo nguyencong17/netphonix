@@ -15,19 +15,58 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@layer base {
+  body {
+    @apply text-gray; 
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));  
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-white;
+  }
+}
+
+
+@layer components {
+  /* Header */
+  header ul li.active {
+    @apply bg-[#1a1a1a]
+  }
+  /* Hero */
+  .hero-bg {
+    background: linear-gradient(90deg, rgba(var(--background-start-rgb), 1) 0%, rgba(var(--background-end-rgb), 1) 100%);
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  h1 {
+    @apply text-[58px] font-bold leading-normal;
+  }
+
+  h2 {
+    @apply text-[48px] font-bold leading-normal;
+  }
+
+  h3 {
+    @apply text-[36px] font-bold leading-normal;
+  }
+
+  h4 {
+    @apply text-[24px] font-bold leading-normal;
+  }
+
+  h5 {
+    @apply text-[20px] font-bold leading-normal;
+  }
+
+  h6 {
+    @apply text-[16px] font-bold leading-normal;
   }
 }

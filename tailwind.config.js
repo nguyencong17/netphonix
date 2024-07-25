@@ -7,7 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        '2xl': '1596px',
+      },
+      colors: {
+        'gray': '#999999',
+        'bdcolor': '#262626',
+      }
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ export const ListMovie = (props) => {
   return (
     <div>
       <div className="grid grid-cols-5 gap-4">
-        {listmovie && listmovie.map((movie) => <Card movie={movie} />)}
+        {listmovie && listmovie.map((movie) => <Card movie={movie} key={movie.id} />)}
       </div>
     </div>
   );
